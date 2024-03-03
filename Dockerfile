@@ -5,3 +5,5 @@ RUN cd ${PS3DEV} \
     && cd /ps3libraries \
     && ./libraries.sh \
     && rm -rf /ps3libraries
+
+CMD ["/bin/bash"]

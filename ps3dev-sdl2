@@ -1,0 +1,8 @@
+#!/bin/bash
+
+CMD="$@"
+
+if [ ! -z "$CMD" ]; then
+  echo $CMD
+  DOCKER_DEFAULT_PLATFORM=linux/amd64 docker run -t -v `pwd`:/build -w /build hldtux/ps3dev-sdl2 $CMD
+fi
