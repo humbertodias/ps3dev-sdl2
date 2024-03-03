@@ -42,7 +42,7 @@ jobs:
         with:
           destination_container_repo: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPONAME }}
           provider: dockerhub
-          short_description: 'A Docker Image for PS3 Development'
+          short_description: 'A Docker Image for PS3 Development with sdl2'
           readme_file: 'README.md'
 
       - name: Set up QEMU
