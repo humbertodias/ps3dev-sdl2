@@ -1,4 +1,6 @@
 [![ci-docker](https://github.com/humbertodias/ps3dev-sdl2/actions/workflows/deploy.yml/badge.svg)](https://github.com/humbertodias/ps3dev-sdl2/actions/workflows/deploy.yml)
+[![](https://images.microbadger.com/badges/image/hldtux/psd3dev-sdl2.svg)](https://microbadger.com/images/hldtux/psd3dev-sdl2)
+[![](https://img.shields.io/docker/pulls/hldtux/psd3dev-sdl2.svg?maxAge=604800)](https://hub.docker.com/r/hldtux/psd3dev-sdl2/)
 
 # psd3dev-sdl2
 
