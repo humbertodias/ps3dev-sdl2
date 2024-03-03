@@ -27,6 +27,7 @@ Contains:
 ./ps3dev-sdl2 CMD_TO_COMPILE
 ```
 
+Sample
 ```sh
 echo '
 #include <stdio.h>
@@ -41,10 +42,17 @@ int main() {
     return 0;
 }' > sdl-version.c
 
-./ps3dev-sdl2 ppu-gcc sdl-version.c -o sdl-version.elf -I/usr/local/ps3dev/portlibs/ppu/include/SDL2 -L/usr/local/ps3dev/portlibs/ppu/lib -lSDL2
+./ps3dev-sdl2 ppu-gcc sdl-version.c -o sdl-version.elf \
+-I/usr/local/ps3dev/portlibs/ppu/include/SDL2 \
+-L/usr/local/ps3dev/portlibs/ppu/lib -lSDL2
+
 file sdl-version.elf
 ```
 Output
 ```
-sdl-version: ELF 64-bit MSB executable, 64-bit PowerPC or cisco 7500, Unspecified or Power ELF V1 ABI, version 1 (SYSV), statically linked, with debug_info, not stripped
+sdl-version.elf: ELF 64-bit MSB executable, 64-bit PowerPC or cisco 7500, Unspecified or Power ELF V1 ABI, version 1 (SYSV), statically linked, with debug_info, not stripped
 ```
+
+> [!NOTE]  
+> ppu-gcc : is the compiler for the PowerPC architecture, particularly for the Cell Broadband Engine Architecture (Cell BE), which is used in the PlayStation 3 (PS3) gaming console.
+> 

@@ -1,2 +1,4 @@
 .vscode
 *.o
+*.elf
+sdl-version.c
