@@ -12,13 +12,15 @@ Contains:
   * sdl - 1.3.0
   * sdl_mixer - 1.2.11
   * sdl_image - 1.2.10
+  * sdl_ttf - 2.0.10
   * sdl_net - 1.2.7
+  * sdl_gfx - 2.0.27
 * [SDL2_PSL1GHT](https://github.com/humbertodias/SDL2_PSL1GHT)
   * sdl2 - 2.0.13 
-  * sdl2_image - 2.8.2
   * sdl2_mixer - 2.8.0
-  * sdl_ttf - 2.0.10
-  * sdl_gfx - 2.0.27
+  * sdl2_image - 2.8.2
+  * sdl2_ttf - 2.22.0
+  * sdl2_net - 2.2.0
 
 
 # How to use
