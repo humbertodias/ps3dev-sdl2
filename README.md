@@ -2,7 +2,7 @@
 
 # psd3dev-sdl2
 
-A Docker Image for PS3 Development with sdl2
+A Docker Image for PS3 Development with sdl2 compiled for powerpc64-ps3-elf.
 
 Contains:
 
@@ -19,3 +19,32 @@ Contains:
   * sdl2_mixer - 2.8.0
   * sdl_ttf - 2.0.10
   * sdl_gfx - 2.0.27
+
+
+# How to use
+
+```sh
+./ps3dev-sdl2 CMD_TO_COMPILE
+```
+
+```sh
+echo '
+#include <stdio.h>
+#include "SDL.h"
+
+int main() {
+    SDL_version version;
+    SDL_VERSION(&version);
+
+    printf("SDL version %d.%d.%d", version.major, version.minor, version.patch);
+
+    return 0;
+}' > sdl-version.c
+
+./ps3dev-sdl2 ppu-gcc sdl-version.c -o sdl-version.elf -I/usr/local/ps3dev/portlibs/ppu/include/SDL2 -L/usr/local/ps3dev/portlibs/ppu/lib -lSDL2
+file sdl-version.elf
+```
+Output
+```
+sdl-version: ELF 64-bit MSB executable, 64-bit PowerPC or cisco 7500, Unspecified or Power ELF V1 ABI, version 1 (SYSV), statically linked, with debug_info, not stripped
+```

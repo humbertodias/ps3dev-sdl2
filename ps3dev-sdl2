@@ -5,4 +5,6 @@ CMD="$@"
 if [ ! -z "$CMD" ]; then
   echo $CMD
   DOCKER_DEFAULT_PLATFORM=linux/amd64 docker run -t -v `pwd`:/build -w /build hldtux/ps3dev-sdl2 bash -c "$CMD"
+else
+  DOCKER_DEFAULT_PLATFORM=linux/amd64 docker run -it -v `pwd`:/build -w /build hldtux/ps3dev-sdl2
 fi
