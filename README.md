@@ -42,7 +42,8 @@ int main() {
     return 0;
 }' > sdl-version.c
 
-./ps3dev-sdl2 ppu-gcc sdl-version.c -o sdl-version.elf \
+./ps3dev-sdl2 \
+ppu-gcc sdl-version.c -o sdl-version.elf \
 -I/usr/local/ps3dev/portlibs/ppu/include/SDL2 \
 -L/usr/local/ps3dev/portlibs/ppu/lib -lSDL2
 
