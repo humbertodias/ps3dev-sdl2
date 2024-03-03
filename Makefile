@@ -6,7 +6,7 @@ build:
 test: test-sdl1	test-sdl2
 
 test-sdl1:
-	./ps3dev-sdl2 "cd tests/sd1 && make"
+	./ps3dev-sdl2 "cd tests/sdl1 && make"
 
-test2-sdl2:
-	./ps3dev-sdl2 "cd tests/sd2 && make"
+test-sdl2:
+	./ps3dev-sdl2 "cd tests/sdl2 && make"
