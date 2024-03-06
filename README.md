@@ -9,6 +9,10 @@ A Docker Image for PS3 Development with sdl2 compiled for powerpc64-ps3-elf.
 Contains:
 
 * [ps3toolchain](https://github.com/ps3dev/ps3toolchain)
+  * binutils-ppu 2.42
+  * binutils-spu 2.22
+  * gcc-ppu 13.2.0
+  * gcc-spu 9.5.0 
 * [ps3libraries](https://github.com/humbertodias/ps3libraries)
 * [SDL_PSL1GHT](https://github.com/zeldin/SDL_PSL1GHT) + [SDL_PSL1GHT_Libs](https://github.com/zeldin/SDL_PSL1GHT_Libs)
   * sdl - 1.3.0
