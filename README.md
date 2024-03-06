@@ -4,7 +4,7 @@
 
 # ps3dev-sdl2
 
-A Docker Image for PS3 Development with sdl2 compiled for powerpc64-ps3-elf.
+A Docker Image for PS3 Development with sdl2 compiled for powerpc64-ps3-elf
 
 Contains:
 
