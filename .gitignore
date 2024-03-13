@@ -1,4 +1,9 @@
 .vscode
 *.o
 *.elf
-sdl-version.c
+*.pkg
+*.self
+sfo.xml
+main
+pkg
+.DS_Store

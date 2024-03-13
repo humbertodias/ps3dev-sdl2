@@ -37,29 +37,13 @@ Contains:
 
 Sample
 ```sh
-echo '
-#include <stdio.h>
-#include "SDL.h"
+./ps3dev-sdl2 make pkg
 
-int main() {
-    SDL_version version;
-    SDL_VERSION(&version);
-
-    printf("SDL version %d.%d.%d", version.major, version.minor, version.patch);
-
-    return 0;
-}' > sdl-version.c
-
-./ps3dev-sdl2 \
-ppu-gcc sdl-version.c -o sdl-version.elf \
--I/usr/local/ps3dev/portlibs/ppu/include/SDL2 \
--L/usr/local/ps3dev/portlibs/ppu/lib -lSDL2
-
-file sdl-version.elf
+file main.elf
 ```
 Output
 ```
-sdl-version.elf: ELF 64-bit MSB executable, 64-bit PowerPC or cisco 7500, Unspecified or Power ELF V1 ABI, version 1 (SYSV), statically linked, with debug_info, not stripped
+main.elf: ELF 64-bit MSB executable, 64-bit PowerPC or cisco 7500, Unspecified or Power ELF V1 ABI, version 1 (SYSV), statically linked, with debug_info, not stripped
 ```
 
 > [!NOTE]  
