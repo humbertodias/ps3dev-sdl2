@@ -5,7 +5,6 @@ int main(int argc, char *argv[])
 {
     SDL_version version;
     SDL_VERSION(&version);
-
     printf("SDL version %d.%d.%d\n", version.major, version.minor, version.patch);
 
     // Initialize SDL with video and game controller subsystems
@@ -19,9 +18,9 @@ int main(int argc, char *argv[])
         "window",
         SDL_WINDOWPOS_UNDEFINED,
         SDL_WINDOWPOS_UNDEFINED,
-        480,
-        272,
-        0);
+        720,
+        576,
+        SDL_WINDOW_FULLSCREEN);
 
     if (window == NULL)
     {
